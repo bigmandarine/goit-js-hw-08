@@ -1,7 +1,7 @@
 import Player from '@vimeo/player';
 import { throttle } from 'lodash';
-const vimeoPlayer = document.querySelector('#vimeo-player');
-const player = new Player(vimeoPlayer);
+const vimeoPlayerEl = document.querySelector('#vimeo-player');
+const player = new Player(vimeoPlayerEl);
 
 player.on(
   'timeupdate',
